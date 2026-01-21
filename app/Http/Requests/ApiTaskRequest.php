@@ -19,7 +19,7 @@ class ApiTaskRequest extends FormRequest
         //'user_id' => 'required|exists:users,id' - ещё так умею
         return [
             'title' => ['required', 'string', 'max:255'],
-            'status_))id' => ['required', 'string', 'max:255'],
+            'status_id' => ['required', 'string', 'max:255'],
         ];
     }
 
