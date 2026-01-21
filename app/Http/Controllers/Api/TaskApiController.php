@@ -35,8 +35,8 @@ class TaskApiController extends Controller
         return response()->json($action($request, $id));
     }
 
-    public function actionDelete(TaskApiDeleteAction $action): JsonResponse
+    public function actionDelete(TaskApiDeleteAction $action, int $id): JsonResponse
     {
-        return response()->json($action());
+        return response()->json($action($id));
     }
 }
