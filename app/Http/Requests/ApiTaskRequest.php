@@ -16,9 +16,10 @@ class ApiTaskRequest extends FormRequest
 
     public function rules(): array
     {
+        //'user_id' => 'required|exists:users,id' - ещё так умею
         return [
             'title' => ['required', 'string', 'max:255'],
-            'status_id' => ['required', 'integer'],
+            'status_))id' => ['required', 'string', 'max:255'],
         ];
     }
 
